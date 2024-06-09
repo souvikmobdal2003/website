@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('reg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainb {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 1px 2px 1px black;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+}
+
+#myForm {
+  font-size: 16px;
+  padding: 30px;
+}
+
+input, button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+input {
+  border-bottom: 2px green;
+  color: black;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+input:focus {
+  animation: input-animation 1s ease-in-out infinite;
+  color: black;
+  width: 200px;
+}
+
+button {
+  color: black;
+  cursor: pointer;
+  border-radius: 10px 12px;
+  position: relative;
+  border: 1px solid red;
+  top: 10px;
+}
+
+button:hover {
+  animation: pulse 5s infinite;
+  width: 50%;
+  color: red;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 12sec;
+}
+
+a:hover {
+  color: indianred;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+  .mainb {
+    width: 250px;
+    height: 350px;
+  }
+  #myForm {
+    font-size: 14px;
+    padding: 20px;
+  }
+  input, button {
+    font-size: 14px;
+    padding: 4px;
+  }
+  input {
+    width: 120px;
+  }
+  input:focus {
+    width: 150px;
+  }
+  button {
+    top: 5px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+  .mainb {
+    width: 200px;
+    height: 250px;
+  }
+  #myForm {
+    font-size: 12px;
+    padding: 15px;
+  }
+  input, button {
+    font-size: 12px;
+    padding: 3px;
+  }
+  input {
+    width: 100px;
+  }
+  input:focus {
+    width: 120px;
+  }
+  button {
+    top: 2px;
+  }
+  p {
+    font-size: 11px;
+  }
+}
+

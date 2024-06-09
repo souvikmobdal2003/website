@@ -1,0 +1,150 @@
+body {
+  background: url('con.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+   height: 100vh;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info {
+  padding: 30px;
+  font-size: 22px;
+  color: black;
+  position: absolute;
+  right: 60%;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 23px;
+  color: black;
+  position: relative;
+  bottom: 8px;
+  bottom: 20%;
+}
+
+.message-box {
+  padding: 20px;
+  color: black;
+  font-size: 22px;
+}
+
+.message-box h2 {
+  margin-top: 0;
+  position: absolute;
+  left: 45%;
+  top: 30%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 49%;
+  top: 40%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: transparent;
+  transition: border-color 0.1s ease-in-out;
+}
+
+input:hover, textarea:hover {
+  border-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+input::placeholder, textarea::placeholder {
+  color: black;
+}
+
+button[type="submit"] {
+  font-size: 20px;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: transparent;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 1px 2px 10px black;
+}
+
+.contact-container h1 {
+  position: absolute;
+  top: 50px;
+  font-size: 50px;
+  color: black;
+}
+
+.bot {
+  position: absolute;
+  font-size: 32px;
+  bottom: 80px;
+  color: black;
+  position: absolute;
+  left: 25%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.fb {
+  color: black;
+  transition: 0.8s;
+}
+
+.fb:hover {
+  color: blue;
+}
+
+.tw {
+  color: black;
+  transition: 0.8s;
+}
+
+.tw:hover {
+  color: powderblue;
+}
+
+.ig {
+  color: black;
+  transition: 0.8s;
+}
+
+.ig:hover {
+  color: violet;
+}

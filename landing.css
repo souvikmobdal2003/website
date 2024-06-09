@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('resto.jpg');
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.navbar {
+  display: inline-flex;
+  width: 90%;
+  height: 50px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px 20px;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+  color: red;
+}
+
+.navbar a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid red;
+  transition: 0.5s;
+}
+
+.navbar a:hover:before {
+  width: 90%;
+}
+
+.logo {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-shadow: 5px 3px 1px black;
+}
+
+.reg a {
+  text-decoration: none;
+  color: red;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 5px 3px 10px black;
+  transition: 0.4s;
+  float: right;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+}
+
+.reg a:hover {
+  background: pink;
+  border: 1px pink;
+}
+
+.content {
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.content span {
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+.content h1 {
+  font-size: 3.5em;
+}
+
+.content a {
+  text-decoration: none;
+  background: transparent;
+  color: black;
+  box-shadow: 5px 3px 10px black;
+  padding: 10px 20px;
+  letter-spacing: 5px;
+  transition: 0.6s;
+  border-radius: 9px;
+  position: absolute;
+  top: 200px;
+  right: 150px;
+  border: 1px solid black;
+}
+
+.content a:hover {
+  background: pink;
+  border: 1px pink;
+}
+
+.content p {
+  font-size: 30px;
+}
+
+

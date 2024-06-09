@@ -1,0 +1,159 @@
+/* login.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('log.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  margin: 40px auto;
+  background-color: transparent;
+  padding: 20px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px black;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  text-align: center;
+  border-radius: 10px 2px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.in-box {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.in-box i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+  position: absolute;
+  right: 145px;
+}
+
+.in-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+.in-box input[type="email"],
+.in-box input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 20px;
+  align-items: center;
+  background: transparent;
+}
+
+.in-box input[type="email"]::placeholder,
+.in-box input[type="password"]::placeholder {
+  color: black;
+  font-size: 15px;
+  color: white;
+}
+
+.in-box input[type="email"]:focus,
+.in-box input[type="password"]:focus {
+  border-color: 1px solid black;
+  box-shadow: 1 1 10px black;
+}
+
+.btn {
+  background-color: transparent;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn[type="submit"] {
+  width: 30%;
+  margin-bottom: 15px;
+  margin: 15px auto;
+  display: block;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn[type="submit"]:hover {
+  background-color: transparent;
+  box-shadow: 1px 2px 10px;
+  
+}
+
+a.btn {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  bottom: 10px;
+  left: 130px;
+}
+
+a.btn:hover {
+  color: blue;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+ .content {
+    width: 300px;
+    padding: 15px;
+  }
+ .in-box {
+    margin-bottom: 10px;
+  }
+ .in-box input[type="email"],
+ .in-box input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+  }
+ .btn[type="submit"] {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  a.btn {
+    left: 100px;
+  }
+}
+
+/* For screens smaller than 480px (mobiles) */
+@media only screen and (max-width: 480px) {
+ .content {
+    width: 250px;
+    padding: 10px;
+  }
+ .in-box {
+    margin-bottom: 8px;
+  }
+ .in-box input[type="email"],
+ .in-box input[type="password"] {
+    width: 95%;
+    padding: 6px;
+    font-size: 12px;
+  }
+ .btn[type="submit"] {
+    width: 50%;
+    margin-bottom: 8px;
+  }
+  a.btn {
+    left: 70px;
+  }
+}
